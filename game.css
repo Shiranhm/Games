@@ -298,6 +298,36 @@ canvas {
     padding: 18px;
   }
 
+  .arcade-info {
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+  }
+
+  .arcade-info .control-grid {
+    order: 1;
+    margin-top: 0;
+  }
+
+  .arcade-info .game-actions {
+    order: 2;
+    margin: 0;
+  }
+
+  .arcade-info .status-message {
+    order: 3;
+    margin: 0;
+  }
+
+  .arcade-info .tips {
+    order: 4;
+  }
+
+  .arcade-info .score-list {
+    order: 5;
+    margin-bottom: 0;
+  }
+
   .control-grid {
     margin-top: 14px;
   }
