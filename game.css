@@ -265,10 +265,6 @@ canvas {
   .game-layout {
     grid-template-columns: 1fr;
   }
-
-  .game-info {
-    order: -1;
-  }
 }
 
 @media (max-width: 560px) {
@@ -288,6 +284,14 @@ canvas {
 
   .tile {
     min-height: 72px;
+  }
+
+  .game-info {
+    padding: 18px;
+  }
+
+  .control-grid {
+    margin-top: 14px;
   }
 
   .sudoku-board {
