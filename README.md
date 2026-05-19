@@ -19,6 +19,7 @@ Upload these updated files to the root of the `Shiranhm/Games` GitHub repository
 - `styles.css`
 - `script.js`
 - `gamehub-hero.png`
+- `games/`
 - `README.md`
 
 GitHub Pages should stay configured as:

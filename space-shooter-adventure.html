@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Space Shooter Adventure | GameHub by Shiran</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../styles.css" />
+    <link rel="stylesheet" href="game.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="brand" href="../index.html#home" aria-label="GameHub by Shiran home">
+        <span class="brand-mark">GH</span>
+        <span>GameHub by Shiran</span>
+      </a>
+      <nav class="site-nav" aria-label="Main navigation">
+        <a href="../index.html#home">Home</a>
+        <a href="../index.html#games">Play Games</a>
+        <a href="../index.html#new-games">New Games</a>
+        <a href="../index.html#contact">Contact</a>
+      </nav>
+    </header>
+
+    <main class="game-page">
+      <div class="game-shell">
+        <div class="game-topbar">
+          <a class="back-link" href="../index.html#games">Back to games</a>
+        </div>
+        <section class="game-title">
+          <p class="section-kicker">Arcade shooter</p>
+          <h1>Space Shooter Adventure</h1>
+          <p>Move your ship, fire lasers, and stop the incoming space rocks.</p>
+        </section>
+
+        <section class="game-layout" aria-label="Space Shooter Adventure game">
+          <div class="game-stage">
+            <canvas id="space-canvas" width="960" height="600" aria-label="Space shooter game canvas"></canvas>
+          </div>
+          <aside class="game-info">
+            <div class="score-list">
+              <div class="score-item"><span>Score</span><span id="score">0</span></div>
+              <div class="score-item"><span>Best</span><span id="best">0</span></div>
+              <div class="score-item"><span>Lives</span><span id="lives">3</span></div>
+            </div>
+            <div class="game-actions">
+              <button class="primary-control" id="start-btn" type="button">Start Game</button>
+              <button id="restart-btn" type="button">Restart</button>
+            </div>
+            <ul class="tips">
+              <li>Desktop: arrows move, Space shoots.</li>
+              <li>Mobile: use the buttons below.</li>
+              <li>Destroy rocks before they reach your ship.</li>
+            </ul>
+            <div class="control-grid" aria-label="Mobile controls">
+              <button id="left-btn" type="button">Left</button>
+              <button id="shoot-btn" type="button">Shoot</button>
+              <button id="right-btn" type="button">Right</button>
+            </div>
+            <p class="status-message" id="message">Press Start Game.</p>
+          </aside>
+        </section>
+      </div>
+    </main>
+
+    <script src="space-shooter.js"></script>
+  </body>
+</html>
