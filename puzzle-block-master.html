@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Puzzle Block Master | GameHub by Shiran</title>
+    <title>Sudoku Master | GameHub by Shiran</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -34,30 +34,40 @@
         </div>
         <section class="game-title">
           <p class="section-kicker">Puzzle game</p>
-          <h1>Puzzle Block Master</h1>
-          <p>Slide the numbered blocks into order. Simple to learn, tricky to finish.</p>
+          <h1>Sudoku Master</h1>
+          <p>Choose one of 5 levels, fill the grid, and complete the Sudoku puzzle.</p>
         </section>
 
-        <section class="game-layout" aria-label="Puzzle Block Master game">
+        <section class="game-layout" aria-label="Sudoku Master game">
           <div class="game-stage">
-            <div class="puzzle-board" id="puzzle-board" aria-label="Sliding puzzle board"></div>
+            <div class="sudoku-board" id="sudoku-board" aria-label="Sudoku board"></div>
           </div>
           <aside class="game-info">
             <div class="score-list">
-              <div class="score-item"><span>Moves</span><span id="moves">0</span></div>
-              <div class="score-item"><span>Best</span><span id="best">0</span></div>
+              <div class="score-item"><span>Level</span><span id="level-label">Easy</span></div>
+              <div class="score-item"><span>Mistakes</span><span id="mistakes">0</span></div>
               <div class="score-item"><span>Status</span><span id="status">Ready</span></div>
             </div>
+            <label class="level-select-label" for="level-select">Choose level</label>
+            <select class="level-select" id="level-select">
+              <option value="easy">Easy</option>
+              <option value="medium">Medium</option>
+              <option value="hard">Hard</option>
+              <option value="expert">Expert</option>
+              <option value="master">Master</option>
+            </select>
             <div class="game-actions">
-              <button class="primary-control" id="shuffle-btn" type="button">Shuffle Puzzle</button>
-              <button id="solve-btn" type="button">Show Solved</button>
+              <button class="primary-control" id="new-game-btn" type="button">New Puzzle</button>
+              <button id="check-btn" type="button">Check Puzzle</button>
+              <button id="hint-btn" type="button">Hint</button>
+              <button id="reset-btn" type="button">Reset</button>
             </div>
             <ul class="tips">
-              <li>Click a block next to the empty space to move it.</li>
-              <li>Arrange numbers from 1 to 15.</li>
-              <li>Works with touch on mobile screens.</li>
+              <li>Fill every row, column, and 3x3 box with numbers 1 to 9.</li>
+              <li>Given numbers cannot be changed.</li>
+              <li>Use keyboard numbers or tap a square and type on mobile.</li>
             </ul>
-            <p class="status-message" id="message">Shuffle the puzzle to begin.</p>
+            <p class="status-message" id="message">Select a level and start solving.</p>
           </aside>
         </section>
       </div>
