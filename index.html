@@ -5,26 +5,27 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta
       name="description"
-      content="A modern starter website ready to customize and publish with GitHub Pages."
+      content="GameHub by Shiran is a free online browser game portal for simple, fast, and fun games."
     />
-    <title>Launch Studio | Modern Website Starter</title>
+    <title>GameHub by Shiran | Free Online Browser Games</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap"
       rel="stylesheet"
     />
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
     <header class="site-header">
-      <a class="brand" href="#home" aria-label="Launch Studio home">
-        <span class="brand-mark">LS</span>
-        <span>Launch Studio</span>
+      <a class="brand" href="#home" aria-label="GameHub by Shiran home">
+        <span class="brand-mark">GH</span>
+        <span>GameHub by Shiran</span>
       </a>
       <nav class="site-nav" aria-label="Main navigation">
-        <a href="#services">Services</a>
-        <a href="#work">Work</a>
+        <a href="#home">Home</a>
+        <a href="#games">Play Games</a>
+        <a href="#new-games">New Games</a>
         <a href="#contact">Contact</a>
       </nav>
       <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="mobile-menu">
@@ -33,8 +34,9 @@
     </header>
 
     <nav id="mobile-menu" class="mobile-nav" aria-label="Mobile navigation">
-      <a href="#services">Services</a>
-      <a href="#work">Work</a>
+      <a href="#home">Home</a>
+      <a href="#games">Play Games</a>
+      <a href="#new-games">New Games</a>
       <a href="#contact">Contact</a>
     </nav>
 
@@ -42,116 +44,175 @@
       <section class="hero" aria-labelledby="hero-title">
         <img
           class="hero-image"
-          src="hero-website-launch.png"
-          alt="A modern laptop workspace for designing and launching a website"
+          src="gamehub-hero.png"
+          alt="A modern gaming portal with glowing game tiles and arcade-style interface panels"
         />
         <div class="hero-overlay"></div>
         <div class="hero-content">
-          <p class="eyebrow">Website design and launch support</p>
-          <h1 id="hero-title">Build a website that looks sharp and publishes cleanly.</h1>
+          <p class="eyebrow">Simple games. Instant fun. Play anywhere.</p>
+          <h1 id="hero-title">Play Free Online Games</h1>
           <p class="hero-copy">
-            A polished starter site for your brand, portfolio, project, or small business.
-            Customize the words, colors, and sections, then publish it with GitHub Pages.
+            Enjoy simple, fun, and fast browser games directly from your phone, tablet, or
+            computer. No installation required — just choose a game and start playing.
           </p>
           <div class="hero-actions">
-            <a class="button primary" href="#contact">Start a Project</a>
-            <a class="button secondary" href="#work">See Examples</a>
+            <a class="button primary" href="#games">Play Games</a>
+            <a class="button secondary" href="#new-games">View Latest Games</a>
           </div>
         </div>
       </section>
 
-      <section class="section intro" aria-label="Website summary">
-        <div>
-          <p class="section-kicker">Simple, fast, editable</p>
-          <h2>Everything you need for a clean first launch.</h2>
+      <section id="games" class="section featured" aria-labelledby="featured-title">
+        <div class="section-heading">
+          <p class="section-kicker">Play now</p>
+          <h2 id="featured-title">Featured Games</h2>
+          <p>
+            Start with our selected games. These games are easy to play and work directly
+            in your browser.
+          </p>
         </div>
-        <p>
-          This site is built with plain HTML, CSS, and JavaScript, so it is lightweight,
-          easy to understand, and perfect for GitHub Pages hosting.
-        </p>
+        <div class="game-grid">
+          <article class="game-card">
+            <div class="game-art racing-art" aria-hidden="true">
+              <span>Racing</span>
+            </div>
+            <div class="game-card-body">
+              <h3>Car Racing Challenge</h3>
+              <p>
+                A simple racing game where you control the car, avoid obstacles, and try
+                to score higher.
+              </p>
+              <a class="button small" href="#">Play Now</a>
+            </div>
+          </article>
+          <article class="game-card">
+            <div class="game-art puzzle-art" aria-hidden="true">
+              <span>Puzzle</span>
+            </div>
+            <div class="game-card-body">
+              <h3>Puzzle Block Master</h3>
+              <p>
+                Match blocks, solve patterns, and test your thinking with a clean puzzle
+                challenge.
+              </p>
+              <a class="button small" href="#">Play Now</a>
+            </div>
+          </article>
+          <article class="game-card">
+            <div class="game-art space-art" aria-hidden="true">
+              <span>Space</span>
+            </div>
+            <div class="game-card-body">
+              <h3>Space Shooter Adventure</h3>
+              <p>
+                Fly through space, avoid danger, and aim for a new high score in this
+                quick arcade game.
+              </p>
+              <a class="button small" href="#">Play Now</a>
+            </div>
+          </article>
+        </div>
       </section>
 
-      <section id="services" class="section services" aria-labelledby="services-title">
+      <section id="new-games" class="section categories" aria-labelledby="categories-title">
         <div class="section-heading">
-          <p class="section-kicker">Services</p>
-          <h2 id="services-title">A focused web presence without unnecessary complexity.</h2>
+          <p class="section-kicker">Browse</p>
+          <h2 id="categories-title">Browse Games by Category</h2>
+          <p>
+            Choose from different types of browser games including puzzle games, action
+            games, racing games, shooting games, strategy games, and casual games.
+          </p>
         </div>
-        <div class="service-grid">
-          <article class="service-card">
-            <span class="card-number">01</span>
-            <h3>Clear Positioning</h3>
-            <p>Concise messaging that tells visitors who you are, what you offer, and why it matters.</p>
+        <div class="category-grid">
+          <article class="category-card">
+            <span class="category-icon">01</span>
+            <h3>Puzzle Games</h3>
+            <p>Test your thinking with fun logic and problem-solving games.</p>
           </article>
-          <article class="service-card">
-            <span class="card-number">02</span>
-            <h3>Responsive Design</h3>
-            <p>Layouts that stay readable and polished across phones, tablets, and desktop screens.</p>
+          <article class="category-card">
+            <span class="category-icon">02</span>
+            <h3>Action Games</h3>
+            <p>Fast and exciting games for quick entertainment.</p>
           </article>
-          <article class="service-card">
-            <span class="card-number">03</span>
-            <h3>GitHub Publishing</h3>
-            <p>A static setup that can be pushed to GitHub and served with GitHub Pages.</p>
+          <article class="category-card">
+            <span class="category-icon">03</span>
+            <h3>Racing Games</h3>
+            <p>Drive, race, and challenge your speed.</p>
+          </article>
+          <article class="category-card">
+            <span class="category-icon">04</span>
+            <h3>Casual Games</h3>
+            <p>Easy games to play anytime.</p>
+          </article>
+          <article class="category-card">
+            <span class="category-icon">05</span>
+            <h3>Kids Games</h3>
+            <p>Simple and safe games suitable for younger players.</p>
           </article>
         </div>
       </section>
 
-      <section class="section process" aria-labelledby="process-title">
+      <section class="section why" aria-labelledby="why-title">
         <div class="section-heading">
-          <p class="section-kicker">Process</p>
-          <h2 id="process-title">From idea to live page.</h2>
+          <p class="section-kicker">Why play here?</p>
+          <h2 id="why-title">Why Play on GameHub by Shiran?</h2>
+          <p>
+            Our games are designed to be simple, fast, and easy to access. You do not
+            need to download anything or create an account. Just open the game and enjoy.
+          </p>
         </div>
-        <ol class="timeline">
-          <li>
-            <span>Plan</span>
-            Define the goal, audience, page sections, and primary call to action.
-          </li>
-          <li>
-            <span>Shape</span>
-            Replace the starter content with your real copy, visuals, and links.
-          </li>
-          <li>
-            <span>Publish</span>
-            Upload the files to GitHub and enable GitHub Pages from the repository settings.
-          </li>
-        </ol>
+        <div class="feature-grid">
+          <article class="feature-card">
+            <h3>Free to Play</h3>
+            <p>All games can be played online for free.</p>
+          </article>
+          <article class="feature-card">
+            <h3>No Installation</h3>
+            <p>Play directly in your browser.</p>
+          </article>
+          <article class="feature-card">
+            <h3>Mobile Friendly</h3>
+            <p>Games are easy to access from mobile phones, tablets, and computers.</p>
+          </article>
+        </div>
       </section>
 
-      <section id="work" class="section work" aria-labelledby="work-title">
-        <div class="section-heading">
-          <p class="section-kicker">Work</p>
-          <h2 id="work-title">Replace these with your own highlights.</h2>
-        </div>
-        <div class="work-grid">
-          <article>
-            <p>Portfolio</p>
-            <h3>Personal Brand Site</h3>
-          </article>
-          <article>
-            <p>Business</p>
-            <h3>Service Landing Page</h3>
-          </article>
-          <article>
-            <p>Project</p>
-            <h3>Product Launch Page</h3>
-          </article>
+      <section class="section about" aria-labelledby="about-title">
+        <div class="about-panel">
+          <p class="section-kicker">About</p>
+          <h2 id="about-title">About GameHub by Shiran</h2>
+          <p>
+            GameHub by Shiran is a browser-based gaming website created to share fun and
+            simple games that anyone can play online. The aim is to build a clean and
+            easy-to-use game portal where visitors can quickly find and enjoy different
+            types of games.
+          </p>
         </div>
       </section>
 
       <section id="contact" class="section contact" aria-labelledby="contact-title">
         <div>
           <p class="section-kicker">Contact</p>
-          <h2 id="contact-title">Ready to make this yours?</h2>
+          <h2 id="contact-title">Contact</h2>
           <p>
-            Update this section with your email, social link, booking page, or contact form.
+            For game suggestions, feedback, or partnership enquiries, please contact us.
           </p>
+          <p class="email-text">shiranhm@gmail.com</p>
         </div>
-        <a class="button primary" href="mailto:hello@example.com">hello@example.com</a>
+        <a class="button primary" href="mailto:shiranhm@gmail.com">Send Email</a>
       </section>
     </main>
 
     <footer class="site-footer">
-      <p>&copy; <span id="year"></span> Launch Studio. All rights reserved.</p>
-      <a href="#home">Back to top</a>
+      <div>
+        <p>&copy; 2026 GameHub by Shiran. All rights reserved.</p>
+        <p>Free online browser games for everyone.</p>
+      </div>
+      <nav aria-label="Footer navigation">
+        <a href="#">Privacy Policy</a>
+        <a href="#">Terms of Use</a>
+        <a href="#contact">Contact</a>
+      </nav>
     </footer>
 
     <script src="script.js"></script>
