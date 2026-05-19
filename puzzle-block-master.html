@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Puzzle Block Master | GameHub by Shiran</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="game.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="brand" href="index.html#home" aria-label="GameHub by Shiran home">
+        <span class="brand-mark">GH</span>
+        <span>GameHub by Shiran</span>
+      </a>
+      <nav class="site-nav" aria-label="Main navigation">
+        <a href="index.html#home">Home</a>
+        <a href="index.html#games">Play Games</a>
+        <a href="index.html#new-games">New Games</a>
+        <a href="index.html#contact">Contact</a>
+      </nav>
+    </header>
+
+    <main class="game-page">
+      <div class="game-shell">
+        <div class="game-topbar">
+          <a class="back-link" href="index.html#games">Back to games</a>
+        </div>
+        <section class="game-title">
+          <p class="section-kicker">Puzzle game</p>
+          <h1>Puzzle Block Master</h1>
+          <p>Slide the numbered blocks into order. Simple to learn, tricky to finish.</p>
+        </section>
+
+        <section class="game-layout" aria-label="Puzzle Block Master game">
+          <div class="game-stage">
+            <div class="puzzle-board" id="puzzle-board" aria-label="Sliding puzzle board"></div>
+          </div>
+          <aside class="game-info">
+            <div class="score-list">
+              <div class="score-item"><span>Moves</span><span id="moves">0</span></div>
+              <div class="score-item"><span>Best</span><span id="best">0</span></div>
+              <div class="score-item"><span>Status</span><span id="status">Ready</span></div>
+            </div>
+            <div class="game-actions">
+              <button class="primary-control" id="shuffle-btn" type="button">Shuffle Puzzle</button>
+              <button id="solve-btn" type="button">Show Solved</button>
+            </div>
+            <ul class="tips">
+              <li>Click a block next to the empty space to move it.</li>
+              <li>Arrange numbers from 1 to 15.</li>
+              <li>Works with touch on mobile screens.</li>
+            </ul>
+            <p class="status-message" id="message">Shuffle the puzzle to begin.</p>
+          </aside>
+        </section>
+      </div>
+    </main>
+
+    <script src="puzzle-block.js"></script>
+  </body>
+</html>
