@@ -11,7 +11,7 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="styles.css" />
-    <link rel="stylesheet" href="game.css?v=13" />
+    <link rel="stylesheet" href="game.css?v=14" />
   </head>
   <body>
     <header class="site-header">
@@ -43,26 +43,26 @@
             <canvas id="racing-canvas" width="960" height="600" aria-label="Car racing game canvas"></canvas>
           </div>
           <aside class="game-info arcade-info">
-            <div class="score-list">
-              <div class="score-item"><span>Score</span><span id="score">0</span></div>
-              <div class="score-item"><span>Best</span><span id="best">0</span></div>
-              <div class="score-item"><span>Speed</span><span id="speed">1</span></div>
-            </div>
-            <div class="game-actions">
-              <button class="primary-control" id="start-btn" type="button">Start Game</button>
-              <button id="restart-btn" type="button">Restart</button>
-            </div>
-            <ul class="tips">
-              <li>Desktop: use Left and Right arrow keys.</li>
-              <li>Mobile: use the on-screen buttons.</li>
-              <li>Avoid the red cars for as long as possible.</li>
-            </ul>
             <div class="control-grid" aria-label="Mobile controls">
               <button id="left-btn" type="button">Left</button>
               <button id="brake-btn" type="button">Slow</button>
               <button id="right-btn" type="button">Right</button>
             </div>
+            <div class="game-actions">
+              <button class="primary-control" id="start-btn" type="button">Start Game</button>
+              <button id="restart-btn" type="button">Restart</button>
+            </div>
             <p class="status-message" id="message">Press Start Game.</p>
+            <ul class="tips">
+              <li>Desktop: use Left and Right arrow keys.</li>
+              <li>Mobile: use the on-screen buttons.</li>
+              <li>Avoid the red cars for as long as possible.</li>
+            </ul>
+            <div class="score-list">
+              <div class="score-item"><span>Score</span><span id="score">0</span></div>
+              <div class="score-item"><span>Best</span><span id="best">0</span></div>
+              <div class="score-item"><span>Speed</span><span id="speed">1</span></div>
+            </div>
           </aside>
         </section>
       </div>
