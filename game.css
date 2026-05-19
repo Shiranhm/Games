@@ -265,6 +265,14 @@ canvas {
   .game-layout {
     grid-template-columns: 1fr;
   }
+
+  .game-stage {
+    order: 1 !important;
+  }
+
+  .game-info {
+    order: 2 !important;
+  }
 }
 
 @media (max-width: 560px) {
